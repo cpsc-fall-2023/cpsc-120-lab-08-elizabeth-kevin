@@ -1,4 +1,7 @@
-// TODO: Add the required header
+// Kevin Do
+// kevindo05@csu.fullerton.edu
+// @kevindo05
+// Partners: @Elizabeth-7-7
 
 #include <iostream>
 #include <string>
@@ -6,9 +9,14 @@
 
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
+  if (arguments.size() <= 1) {
+    std::cout << "error: you must supply at least one number";
+    return 1;
+  }
 
-  // TODO: Validate that there is at least one command line argument.
+  // ^TODO^: Validate that there is at least one command line argument.
   // If not, print an error message and return a non-zero value.
+
 
   // TODO: Write a for-each loop to sum (add up) all of the command line
   // arguments.
